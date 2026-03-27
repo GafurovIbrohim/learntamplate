@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>User login</title>
+        <style>
+            form{
+                text-align: center;
+            }
+            input{
+                width: 300px;
+                height: 30px; 
+                border: 1px solid black;
+            }
+            button{
+                width: 100px;
+                height: 50px;
+                background-color: blue;
+                color: black;
+            }
+        </style>
+    </head>
+    <body>
+        {% extends 'base.html' %}
+
+        {% block content%}
+
+        <form action="login">
+            <h1>Login(kirish)</h1>
+            <p>Bu yerga login va parolingizni kiritasiz </p>
+            <label for="login">Login</label> 
+            <input type="text" id="login" name="login"> <br> <br>
+            <label for="parol">Parol </label> 
+            <input type="password" id="parol" name="parol"> <br> <br>
+            <button type="button">Kirish</button>
+        </form>
+        
+        {% endblock content %}
+        
+    </body>
+</html>
